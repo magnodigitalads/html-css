@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Desafio 14</title>
+</head>
+<style>
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    table{
+        border-collapse: collapse;
+        width: 550px;
+        margin: auto;
+        
+    }
+    caption{
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 10px;
+    }
+     th, td{
+            border: 2px solid black;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            
+        }
+        .exata{
+            text-align:left ;
+            background-color: gray;
+            color: white;
+
+        }
+        thead{
+            text-align:center ;
+            background-color: gray;
+            color: white;
+            
+
+        }
+        tbody{
+            text-align: center;
+        }
+        h1{
+            background-color: lightgray;
+            width: 550px;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+                        
+        }
+
+</style>
+<body>
+    <h1>Treinamento de tabelas</h1>
+    <table>
+        <caption>
+            Media das Notas 
+
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Área</th>
+                <th rowspan="2"scope="rowgroup">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="rowgroup">Média</th>
+
+            </tr>
+            <tr>
+                
+                <th>Notas 1</th>
+                <th>Notas 2</th>
+                
+            </tr>
+          
+
+        </thead>
+        <tbody>
+              <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                 <td>Matemática</td>
+                 <td>10</td>
+                 <td>13</td>
+                 <td>11,5</td>
+
+            </tr>
+            <tr>
+                <td>Física</td>
+                 <td>9</td>
+                 <td>6</td>
+                 <td>7,5</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                 <td>8</td>
+                 <td>11</td>
+                 <td>9,5</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                 <td>15</td>
+                 <td>7</td>
+                 <td>11,5</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="exata">Médias Exatas</th>
+                <td class="exata">10</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>18</td>
+                <td>17</td>
+                <td>17,5</td>
+            </tr>
+            <tr>
+                <td>Geográfia</td>
+                <td>16</td>
+                <td>20</td>
+                <td>18</td>
+
+            </tr>
+            <tr>
+                <th colspan="4" class="exata">Médias Exatas</th>
+                <td class="exata">18</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+</body>
+</html>
