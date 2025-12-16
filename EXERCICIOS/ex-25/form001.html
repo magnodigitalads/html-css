@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    
 </head>
+
 <body>
+    
     <h1>Meu primeiro formulario</h1>
+    
+    <form action="Cadastro.php" method="post">
+        <label for="inome">
+            <p>Nome:
+        </label> <input type="text" name="Nome" id="inome"> </p>
+        <label for="isobrenome">
+            <p>Sobrenome:
+        </label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
     
 </body>
 </html>
