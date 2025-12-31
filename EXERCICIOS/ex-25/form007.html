@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio do formulario 007 </title>
+</head>
+<body>
+    <h1>Exercicio de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--Sempre que for utilizar formulario que for mais de 3000 bytes 
+            utilizar o metodo post no lugar do get-->
+        
+       <p>
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+            <option value=""select>--- Escolha ---</option>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP" >São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE"> Pernanbuco</option>
+                <option value="RN"> Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+       </p> 
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="profissão" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="ENG">Engenheiro</option>
+                <option value="ARQ">Arquiteto</option>
+                <option value="MEC">Mecânico</option>
+                <option value="GER">Gerente</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagens:</label><br>
+            <textarea name="mensagens" id="imsg" cols="30" rows="10"></textarea>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
