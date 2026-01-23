@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Flexible Box</title>
+    <!--Segue importante dica sobre os eixos
+    FLEX-DIRECTION - ROW: main-axis - esquerda para a direita / cross-axis - de cima para baixo.
+    FLEX-DIRECTION - ROW-REVERSE: main-axis - direita para a esquerda / cross-axis - de cima para baixo.
+    FLEX-DIRECTION - COLUMN: main-axis - de cima para baixo / cross-axis - esquerda para a direita.
+    FLEX-DIRECTION - COLUMN-REVERSE: main-axis - de baixo para cima / cross-axis - esquerda para a direita.
+    -->
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+        }
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

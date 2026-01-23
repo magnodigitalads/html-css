@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Flexible Box</title>
+    <style>
+            /*Existe uma função que junta o flex-direction + flex-wrap:
+                                se chama: flex-flow
+            */  
+           /* =====================================================
+   JUSTIFY-CONTENT (alinhamento no eixo principal)
+
+   flex-start   → Itens grudados no início do container
+   flex-end     → Itens grudados no final do container
+   center       → Itens centralizados no container
+
+   space-between → Espaço ENTRE os itens
+                   (primeiro no início, último no fim)
+
+   space-around  → Espaço ao redor dos itens
+                   (bordas têm metade do espaço)
+
+   space-evenly  → Espaço IGUAL entre itens e bordas
+
+   OBS:
+   - Atua no eixo principal (main axis)
+   - Eixo depende do flex-direction
+===================================================== */  
+        div.conteiner{
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: row wrap; /*<- exemplo mostra a junção do flex directino + wrap */
+        }
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
