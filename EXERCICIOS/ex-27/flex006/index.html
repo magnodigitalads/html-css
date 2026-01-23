@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Flexible Box</title>
+    <style>
+
+        /* =====================================================
+   ALIGN-CONTENT (alinhamento das LINHAS no eixo cruzado)
+
+   stretch       → Estica as linhas para ocupar todo o espaço
+                   (padrão)
+
+   flex-start    → Linhas grudadas no início do eixo cruzado
+
+   flex-end      → Linhas grudadas no final do eixo cruzado
+
+   center        → Linhas centralizadas no eixo cruzado
+
+   space-between → Espaço ENTRE as linhas
+                   (primeira no início, última no fim)
+
+   space-around  → Espaço ao redor das linhas
+                   (bordas com metade do espaço)
+
+   space-evenly  → Espaço IGUAL entre linhas e bordas
+
+   OBS IMPORTANTES:
+   - Atua nas LINHAS, não nos itens
+   - Exige flex-wrap: wrap
+   - Usa o eixo cruzado (cross axis)
+===================================================== */
+
+        div.conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            height: 400px;
+        }
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
